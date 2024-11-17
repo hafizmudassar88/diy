@@ -2,19 +2,19 @@ import Link from "next/link";
 import React from "react";
 import AboutUs from "../about-us/page";
 import Services from "../(services)/services/page";
-import Gallery from "../gallery/page";
 import { TestimonialCarousel } from "./TestimonialCarousel";
 import TypeWriter from "@/components/shared/TypeWriter";
 import MediaPlayer from "@/components/shared/MediaPlayer";
 
 const typewriterStrings = [
-  "Build Your Dream Website – Fast, Easy, and Template-Ready!",
-  "Your Website, Your Way – Choose a Template and Go Live!",
-  "Instant Websites, Endless Possibilities – Start with a Template Today!",
-  "From Idea to Online in Minutes – Ready-Made Templates for Every Business",
-  "Effortless Website Creation – Just Pick, Customize, and Launch!",
-  "Professional Websites Made Simple – Start with a Stunning Template",
-  "Build Your Online Presence – Beautiful Templates, No Coding Needed",
+  "From Research to Recognition – Build Your Student Portfolio with Ease!",
+  "Blog, Publish, Impress – Create Your Website in Minutes!",
+  "Transform Your Ideas into Websites – No Coding Required!",
+  "Present Your Passion – DIY Websites for Students, by Students!",
+  "Highlight Your Achievements – Simple Tools for Academic Showcases!",
+  "Build Your Brand – Websites Tailored for Students’ Needs!",
+  "Turn Knowledge into a Presence – Create Your Site, Share Your Work!",
+  "For Students, By Students – Easy Website Building for Academic Excellence!",
 ];
 
 function Home() {
@@ -27,7 +27,7 @@ function Home() {
     >
       {/* hero section  */}
       <div className="relative min-h-screen bg-center bg-no-repeat bg-cover bg-black ">
-        <div className="absolute inset-0 bg-[url('/images/auto-detailing-scaled-1.png')] bg-center bg-no-repeat bg-cover opacity-[0.26] transition-all duration-300"></div>
+        <div className="absolute inset-0 bg-[url('/images/customizable-template-scaled-1.png')] bg-center bg-no-repeat bg-cover opacity-[0.26] transition-all duration-300"></div>
         <div className="relative z-10 text-center md:text-start">
           <div className="w-full h-full flex flex-col md:flex-row pt-32 px-5 ">
             <div className="md:grow-3 order-2 md:order-1 md:ps-10 p-2">
@@ -43,22 +43,24 @@ function Home() {
                 data-aos="fade-down"
                 className="text-white mt-10 text-2xl md:text-5xl font-extrabold"
               >
-                Bring Your Business Online with Effortless Website Building
+                Showcase Your Knowledge – Build Your Website, Your Way!{" "}
               </h1>
 
               <p
                 data-aos="fade-up"
                 className="text-white mt-10 md:mt-1 text-justify md:text-start md:text-lg font-semibold text-opacity-85 font_barlow"
               >
-                Take your business online in no time with our easy-to-use
-                website builder. Choose from professionally designed templates,
-                customize effortlessly, and launch your site with a few clicks –
-                no coding needed!
+                Empower your academic journey with a platform designed for
+                students. Create stunning websites to showcase your blogs,
+                research papers, and achievements – no coding skills needed.
+                Start in minutes with easy-to-use templates and customizable
+                options. Share your story, impress your peers, and build your
+                online presence effortlessly!
               </p>
 
               <div data-aos="fade-right" className="mt-10">
                 <Link
-                  href={"/booking"}
+                  href={"/signup"}
                   className="btn bg-red-600 text-white text-xl w-40 border-0 hover:bg-red-600 hover:scale-110"
                 >
                   Sign Up Now
@@ -70,7 +72,9 @@ function Home() {
               className="md:grow-1 w-full h-full order-1 md:order-2 items-center bg-red-600 rounded-full mt-10 md:mt-20"
               data-aos="fade-right"
             >
-              <MediaPlayer src={"/videos/Laptop has padlock protection for account security.json"} />
+              <MediaPlayer
+                src={"/videos/Boy learning from online website.json"}
+              />
             </div>
           </div>
         </div>
@@ -78,7 +82,6 @@ function Home() {
 
       <AboutUs showHeroSection={false} />
       <Services showHeroSection={false} limit={3} />
-      <Gallery showHeroSection={false} />
 
       <div className="bg-white pb-10">
         <div className="bg-white flex flex-col justify-center items-center text-black p-10">
@@ -87,7 +90,7 @@ function Home() {
           </span>
 
           <h1 data-aos="fade-down" className="mt-10 text-3xl font-extrabold">
-            What Clients Say About Our Car detailing Service?
+            What Our Users Are Saying
           </h1>
         </div>
 
@@ -101,14 +104,15 @@ function Home() {
           data-aos="fade-right"
           className="mt-10 text-center text-3xl font-extrabold"
         >
-          Thank You For Considering Benedetto Auto Detail For Your Car Care
-          Needs
+          Get in Touch with Us for Your Website Creation Journey{" "}
         </h1>
 
         <h1 data-aos="fade-left" className="mt-4 text-center text-lg ">
-          We welcome any questions or feedback you may have about our services.
-          Please feel free to reach out to us via phone, email or in person at
-          our location.
+          Thank you for choosing our platform to build your online presence.
+          We’re here to support you every step of the way. Whether you have
+          questions, need assistance, or want to share feedback, we’d love to
+          hear from you. Feel free to reach out to us through email, phone, or
+          our online support center. Let’s create something amazing together!
         </h1>
 
         <Link

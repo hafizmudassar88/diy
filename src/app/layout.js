@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Benedetto",
+  title: "DIY",
   description: "Best Car detailing Service in Town Town",
 };
 

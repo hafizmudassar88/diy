@@ -27,7 +27,7 @@ function ContactUs() {
     <div className="bg-white overflow-x-hidden">
       {/* hero section  */}
       <HeroSection
-        bgImage={"/images/ceramic-coating-for-cars.jpg"}
+        bgImage={"/images/content-management-service-for-cars.jpg"}
         title={"Contact Us"}
         subtitle={"Contact Us"}
       />
@@ -49,8 +49,7 @@ function ContactUs() {
           data-aos="fade-up"
           className="mt-2 text-md text-opacity-85 font_barlow text-center p-2"
         >
-          Get in touch with us to book your appointment. Call us directly or
-          fill out the contact information form because, We Come To You!
+          Get in Touch with Us for Your Website Creation Journey{" "}
         </p>
       </div>
 
@@ -66,11 +65,11 @@ function ContactUs() {
             data-aos="fade-up"
             className="mt-2 text-md text-opacity-85 font_barlow text-center "
           >
-            4 Toribeth St, Ladera Ranch, Orange County, CA 92694, United States
+            4 Highfield Street, Ladera Ranch, London, UK SW1A 1AA
           </p>
         </div>
-        <div className="bg-[#ED1C24] flex flex-col gap-5 items-center justify-center rounded-3xl text-white p-5">
-          <div className="bg-[#020202] w-20 h-20 rounded-full flex items-center justify-center">
+        <div className="bg-[#020202] flex flex-col gap-5 items-center justify-center rounded-3xl text-white p-5">
+          <div className="bg-[#ED1C24] w-20 h-20 rounded-full flex items-center justify-center">
             <LuPhoneCall className="text-5xl text-white" />
           </div>
 
@@ -79,7 +78,7 @@ function ContactUs() {
             data-aos="fade-up"
             className="mt-2 text-md text-opacity-85 font_barlow text-center "
           >
-            (949) 201-9253
+            +44 20 7946 0958
           </p>
         </div>
         <div className="bg-[#020202] flex flex-col gap-5 items-center justify-center rounded-3xl text-white p-5">
@@ -92,7 +91,7 @@ function ContactUs() {
             data-aos="fade-up"
             className="mt-2 text-md text-opacity-85 font_barlow text-center "
           >
-            benedettoautodetail@gmail.com
+            diybuilders@gmail.com
           </p>
         </div>
       </div>
@@ -100,7 +99,10 @@ function ContactUs() {
       {/* contact form  */}
       <div className="min-h-[80vh] rounded-3xl grid grid-cols-1 md:grid-cols-[1fr_1fr] bg-white m-5 md:m-20">
         {/* left side  */}
-        <div className=" text-black rounded-3xl shadow-xl bg-[#f4f4f4] p-5 md:p-10" data-aos="fade-right">
+        <div
+          className=" text-black rounded-3xl shadow-xl bg-[#f4f4f4] p-5 md:p-10"
+          data-aos="fade-right"
+        >
           <form onSubmit={handleSubmit(onSubmit)}>
             {/* Name Field */}
             <div className="mb-4">
@@ -194,17 +196,12 @@ function ContactUs() {
             </button>
           </form>
         </div>
-
-        {/* right side  */}
-        <div className="w-full hidden md:block" data-aos="fade-left">
-        <MediaPlayer src={'/videos/Man doing Tyre Change.json'} />
-        </div>
       </div>
 
       {/* location  */}
       <div className="w-full h-[70vh]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.0967561597363!2d-117.63598852494661!3d33.55086234403936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcedd039414ce1%3A0xf0541a4e379078c6!2s4%20Toribeth%20St%20%234%2C%20Mission%20Viejo%2C%20CA%2092694%2C%20USA!5e0!3m2!1sen!2s!4v1723824435536!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.880349823941!2d-0.127758!3d51.503364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c243b1dc11%3A0x75b6d3b99c575a9a!2s4%20Highfield%20Street%2C%20Ladera%20Ranch%2C%20London%2C%20UK%20SW1A%201AA!5e0!3m2!1sen!2s!4v1723824435536!5m2!1sen!2s"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           className="w-full h-full border-0"

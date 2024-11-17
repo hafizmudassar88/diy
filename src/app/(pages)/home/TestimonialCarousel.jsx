@@ -12,17 +12,17 @@ const testimonials = [
   {
     username: "Olivia G.",
     comment:
-      "I totally recommend these guys because of their work ethic and premium services. The team is so polite and knowledgeable.",
+      "This platform made it so easy to create my portfolio. I built my site in just a few hours, and it looks so professional!",
   },
   {
     username: "John Lark",
     comment:
-      "I have been using Benedetto Auto Detail for a year now. I am quite impressed by their work and professionalism of the team.",
+      "I love how simple it is to manage my content. Adding new research papers and blogs is a breeze – no coding required!",
   },
   {
     username: "Jennifer L.",
     comment:
-      "Benedetto Auto Detail is the best auto detailing service provider in Orange County California. I am totally in love with the result.",
+      "The free hosting is a game-changer. I published my website instantly, and it’s been running smoothly ever since.",
   },
   {
     username: "Bob Brown",

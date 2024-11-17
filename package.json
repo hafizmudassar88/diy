@@ -1,5 +1,5 @@
 {
-  "name": "benedetto",
+  "name": "DIY",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "aos": "^2.3.4",
     "axios": "^1.7.4",
-    "benedetto": "file:",
+    "DIY": "file:",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.1.8",

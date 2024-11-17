@@ -7,7 +7,7 @@ import { CiFacebook } from "react-icons/ci";
 import { IoLogoInstagram } from "react-icons/io5";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { FaCarSide } from "react-icons/fa6";
+import FaCarSide from "../../../public/images/diy.svg";
 
 function Footer() {
   return (
@@ -17,15 +17,18 @@ function Footer() {
           <div className="flex-shrink-0">
             <Link href="/">
               <img
-                src="/images/Benedetto-Auto-Detail-Logo.png" // Update with your logo path
+                src="/images/diy.svg" // Update with your logo path
                 alt="Company Logo"
-                className="h-12 w-32" // Set height and width
+                className="h-50 w-60" // Set height and width
               />
             </Link>
           </div>
 
           <p className="text-justify">
-            Benedetto Auto Detail is passionate about helping our clients
+            Thank you for choosing us to create your online presence. Our
+            mission is to make website creation simple, accessible, and free for
+            everyone. If you have any questions or need assistance, feel free to
+            contact us. Let’s build something amazing together!our clients
             maintain their vehicles’ appearance and overall condition. With
             years of experience in the industry, our team is dedicated to
             providing top-notch auto detailing services to help you keep your
@@ -60,17 +63,17 @@ function Footer() {
             About Us
           </Link>
           <Link
-            href={"/services"}
+            href={"/"}
             className="text-decoration-none hover:text-red-500 hover:font-semibold"
           >
             Services
           </Link>
-          <Link
+          {/* <Link
             href={"/gallery"}
             className="text-decoration-none hover:text-red-500 hover:font-semibold"
           >
             Gallery
-          </Link>
+          </Link> */}
           <Link
             href={"/contact-us"}
             className="text-decoration-none hover:text-red-500 hover:font-semibold"
@@ -81,34 +84,31 @@ function Footer() {
             href={"/booking"}
             className="text-decoration-none hover:text-red-500 hover:font-semibold"
           >
-            Booking
+            Sign Up
           </Link>
         </nav>
         <nav data-aos="fade-up">
           <h6 className="footer-title text-red-500">Services</h6>
           <Link
-            href={"/auto-detailing"}
+            // href={"/customizable-template"}
+            href={"/"}
             className="text-decoration-none hover:text-red-500 hover:font-semibold"
           >
-            Auto Detailing
+            Customizable Templates
           </Link>
           <Link
-            href={"/ceramic-coating"}
+            href={"/"}
+            // href={"/content-management-service"}
             className="text-decoration-none hover:text-red-500 hover:font-semibold"
           >
-            Ceramic Coating
+            CMS for Dynamic Content Management
           </Link>
           <Link
-            href={"/interior-coating"}
+            href={"/"}
+            // href={"/hosting-publishing"}
             className="text-decoration-none hover:text-red-500 hover:font-semibold"
           >
-            Interior Coating
-          </Link>
-          <Link
-            href={"/paint-protection-film"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
-          >
-            Paint Protection Film
+            Free Hosting and Publishing
           </Link>
         </nav>
         <nav data-aos="fade-up">
@@ -116,43 +116,46 @@ function Footer() {
           <div className="cursor-pointer">
             <div className="flex gap-x-2 items-center">
               <MdOutlinePhoneInTalk className="text-lg" />
-              <p>949 201 9253</p>
+              <p>+44 20 7946 0958</p>
             </div>
           </div>
           <div className="cursor-pointer">
             <div className="flex gap-x-2 items-center">
               <MdOutlineMailOutline className="text-lg" />
-              <p>benedettoautodetail@gmail.com</p>
+              <p>diybuilders@gmail.com</p>
             </div>
           </div>
           <div className="cursor-pointer">
             <div className="flex gap-x-2 items-center">
               <IoLocationOutline className="text-3xl" />
               <p>
-                4 Toribeth St, Ladera Ranch, Orange County, CA 92694, United
-                States
+                4 Highfield Street, Ladera Ranch, London, UK SW1A 1AAty, CA
+                92694, United States
               </p>
             </div>
           </div>
           <nav className="mt-3">
-            <h6 className="footer-title text-red-500">Service Area</h6>
             <div className="cursor-pointer">
               <div className="flex gap-x-2 items-center">
                 <IoLocationOutline className="text-lg" />
-                <p>South Orange County</p>
+                <p>Highfield Street</p>
               </div>
             </div>
           </nav>
         </nav>
       </footer>
 
-      <div className="relative mt-8 overflow-hidden h-10 bg-transparent border-b border-gray-500">
+      <div className="relative mt-18 overflow-hidden h-20 bg-transparent border-b border-gray-500">
         <motion.div
-          className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center "
+          className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center"
           animate={{ x: ["-100%", "100%"] }}
           transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
         >
-          <FaCarSide className="text-5xl text-red-600" />
+          <img
+            src="/images/diy.svg" // Update the path if necessary
+            alt="Company Logo"
+            className="h-20 w-auto" // Adjust height and width as needed
+          />
         </motion.div>
       </div>
 
@@ -161,12 +164,8 @@ function Footer() {
         className="footer bg-base-200 text-base-content flex flex-col p-5"
       >
         <p className="text-start text-red-500">
-          Copyright © 2023, Benedetto Auto Detail. All Rights Reserved.
+          Copyright © 2023, DIY Builders. All Rights Reserved.
         </p>
-        <div className="flex gap-2 justify-end self-end">
-          <p className="text-red-500">Privacy Policy</p>|
-          <p className="text-red-500">Account Deletion</p>
-        </div>
       </footer>
     </>
   );

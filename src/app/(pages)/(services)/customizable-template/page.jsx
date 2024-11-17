@@ -3,7 +3,6 @@ import ServiceProcedureCard from "@/components/shared/ServiceProcedureCard";
 import React from "react";
 
 const servicesList = [
-
   {
     title: "Wash & Wax Detail Service",
     price: "100",
@@ -28,7 +27,7 @@ const servicesList = [
       "Upgrade to Ceramic Wax (Hybrid Sealant ) for an extra $60 to $100 Depending on the size of the Vehicle.",
     ],
   },
-  
+
   {
     title: "Two Cars Minimum Cleaning Wash Service (Ladera Ranch Exclusive)",
     price: "120",
@@ -48,9 +47,7 @@ const servicesList = [
         "Cup Holder Cleaning",
       ],
     },
-    notes: [
-      "Extra charge for big vehicles",
-    ],
+    notes: ["Extra charge for big vehicles"],
   },
 
   {
@@ -126,7 +123,7 @@ const servicesList = [
     },
     notes: [
       "Upgrade to Ceramic Wax (Hybrid Sealant ) for an extra $60 to $100 Depending on the size of the Vehicle.",
-      "Charges may vary depending on the side and condition of the Vehicle"
+      "Charges may vary depending on the side and condition of the Vehicle",
     ],
   },
 
@@ -182,26 +179,24 @@ const servicesList = [
     },
     notes: ["Extra Charge for Larger Vehicles. Call for an estimate."],
   },
-
- 
 ];
 
-function AutoDetailing() {
+function CustomizeTemplate() {
   return (
     <div>
       {/* hero section  */}
       <HeroSection
         bgImage={"/images/10bea6_e313de2941484aed864686c7ede825ee_mv2.png"}
-        title={"Auto Detailing Near Ladera Ranch & Orange County"}
-        subtitle={"Auto Detailing"}
+        title={"Customizable Templates "}
+        subtitle={"Customizable Templates"}
       />
 
-      {/* Auto Detailing  */}
+      {/* Customizable Templates  */}
       <div className="min-h-[70vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] bg-white">
         {/* left side  */}
         <div className="w-full mt-4 p-10">
           <img
-            src="/images/shutterstock_1792547533_1200x.webp"
+            src="/images/software-development.jpg"
             alt=""
             className="w-full h-full"
           />
@@ -210,63 +205,37 @@ function AutoDetailing() {
         {/* right side  */}
         <div className="bg-white text-black p-10">
           <span className="inline-block mt-5 text-2xl uppercase border-b-4 border-red-600">
-            Auto Detailing
+            Customizable Templates
           </span>
 
           <h1
             data-aos="fade-down"
             className="mt-10 text-xl md:text-3xl font-extrabold"
           >
-            Taking Care of Your Car with Auto Detailing Needs
+            Tailored Designs, Just for You{" "}
           </h1>
 
           <p
             data-aos="fade-up"
             className="mt-2 text-lg text-opacity-85 font_barlow text-justify"
           >
-            Welcome to Benedetto Auto Detail, your one-stop solution for premium
-            auto detailing services. We are a team of experienced professionals
-            dedicated to providing the highest quality auto detailing services
-            to keep your vehicle looking as good as new. Our Auto Detailing
-            California include exterior detailing, interior detailing, engine
-            detailing, and paint correction. We use only the best products and
-            equipment to ensure your vehicle receives the utmost care and
-            attention. Our team takes pride in our work, and we are committed to
-            providing the highest level of customer satisfaction. Our exterior
-            detailing services include a thorough wash, wax, and polish to
-            restore your vehicle’s shine and protect it from the elements. Our
-            interior detailing services include a deep clean of all surfaces,
-            including leather conditioning and carpet shampooing, leaving your
-            vehicle looking and smelling fresh.
+            Stand out with our customizable templates, designed to make your
+            website truly yours. Choose from a variety of stunning layouts
+            tailored for students, bloggers, and researchers. Personalize every
+            detail – from colors and fonts to images and content – to perfectly
+            reflect your style and purpose. Whether you’re showcasing your
+            academic research, sharing your creative projects, or starting a
+            personal blog, our templates make it effortless. Every template is
+            mobile-friendly and optimized for a seamless viewing experience.
+            Save time and focus on your content while we take care of the
+            design. Let your website reflect your ideas, passions, and
+            achievements with ease. Building your unique online presence has
+            never been this easy!
           </p>
-        </div>
-      </div>
-
-      {/* services procedure  */}
-      <div className="bg-red-500 p-10">
-        <div className="text-white flex flex-col justify-center items-center m-5 mb-10">
-          <h1
-            data-aos="fade-down"
-            className="mt-10 text-3xl md:text-5xl font-extrabold"
-          >
-            Auto Detailing
-          </h1>
-          <h1
-            data-aos="fade-down"
-            className="mt-4 text-lg md:text-2xl text-center md:text-start font-extrabold"
-          >
-            extra charge for large vehicle
-          </h1>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 gap-4">
-          {servicesList.map((service) => (
-            <ServiceProcedureCard key={service.title} service={service} />
-          ))}
         </div>
       </div>
     </div>
   );
 }
 
-export default AutoDetailing;
+export default CustomizeTemplate;

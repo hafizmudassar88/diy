@@ -3,10 +3,18 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 const servicesMenu = [
-  { title: "Auto Detailing", url: "/auto-detailing" },
-  { title: "Ceramic Coating", url: "/ceramic-coating" },
-  { title: "Interior Coating", url: "/interior-coating" },
-  { title: "Paint Protection Film", url: "/paint-protection-film" },
+  // { title: "Customizable Templates", url: "/customizable-template" },
+  { title: "Customizable Templates", url: "/" },
+  // {
+  //   title: "CMS for Dynamic Content Management",
+  //   url: "/content-management-service",
+  // },
+  {
+    title: "CMS for Dynamic Content Management",
+    url: "/",
+  },
+  // { title: "Free Hosting and Publishing", url: "/hosting-publishing" },
+  { title: "Free Hosting and Publishing", url: "/" },
 ];
 
 function Navbar() {
@@ -43,7 +51,7 @@ function Navbar() {
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="/images/diy.svg"
               className="h-5 w-5 text-red-600"
               fill="none"
               viewBox="0 0 24 24"
@@ -74,7 +82,7 @@ function Navbar() {
                   onClick={() => setServicesOpen(!isServicesOpen)}
                   className="flex justify-between w-full"
                 >
-                  Services
+                  Servicesssssss
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 text-red-600 ml-2"
@@ -104,9 +112,7 @@ function Navbar() {
                 )}
               </div>
             </li>
-            <li>
-              <Link href={"/gallery"}>Gallery</Link>
-            </li>
+
             <li>
               <Link href={"/contact-us"}>Contact Us</Link>
             </li>
@@ -116,7 +122,7 @@ function Navbar() {
         <div className="flex-shrink-0 p-2 hidden lg:block">
           <Link href={"/"}>
             <img
-              src="/images/Benedetto-Auto-Detail-Logo.png" // Update with your logo path
+              src="/images/diy.svg" // logo path
               alt="Company Logo"
               className="ms-4 md:ms-0 h-8 md:h-12 w-20 md:w-32" // Set height and width
             />
@@ -127,7 +133,7 @@ function Navbar() {
       <div className="flex-shrink-0 p-2 block lg:hidden">
         <Link href={"/"}>
           <img
-            src="/images/Benedetto-Auto-Detail-Logo.png" // Update with your logo path
+            src="/images/diy.svg" // logo path
             alt="Company Logo"
             className="ms-4 md:ms-0 h-8 md:h-12 w-20 md:w-32" // Set height and width
           />
@@ -142,13 +148,9 @@ function Navbar() {
               Home
             </Link>
           </li>
-          <li className="m-1">
-            <Link href={"/about-us"} className="w-full">
-              About Us
-            </Link>
-          </li>
+
           <li className="m-1 relative group">
-            <Link href={"/services"} className="px-20 w-full">
+            <Link href={"/"} className="w-full">
               Services
             </Link>
             <ul className="absolute bg-base-200 border-0 top-7 left-0 p-2 w-[15rem] bg-base-100 rounded-box shadow mt-2 hidden group-hover:block z-20">
@@ -162,8 +164,8 @@ function Navbar() {
             </ul>
           </li>
           <li className="m-1">
-            <Link href={"/gallery"} className="w-full">
-              Gallery
+            <Link href={"/about-us"} className="w-full">
+              About Us
             </Link>
           </li>
           <li className="m-1">
@@ -177,10 +179,10 @@ function Navbar() {
       {/* Navbar end */}
       <div className="navbar-end hidden lg:flex lg:justify-end">
         <Link
-          href={"/booking"}
+          href={"/signup"}
           className="btn bg-red-600 text-white hover:bg-red-600 hover:scale-110"
         >
-          Book Now
+          Sign Up Now
         </Link>
       </div>
     </div>

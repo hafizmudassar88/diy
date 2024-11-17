@@ -42,19 +42,20 @@ function AboutUs({ showHeroSection = true }) {
           </span>
 
           <h1 data-aos="fade-down" className="mt-10 text-3xl font-extrabold">
-            Your Partner in Effortless Website Building{" "}
+            Empowering Students to Share, Showcase, and Shine.{" "}
           </h1>
 
           <p
             data-aos="fade-up"
             className="mt-2 text-lg text-opacity-85 font_barlow text-justify"
           >
-            At DIY, we believe building a website should be simple, fast, and
-            accessible to everyone. We provide you with stunning, professionally
-            designed templates and an intuitive platform that lets you customize
-            your site effortlessly. Our mission is to empower individuals and
-            businesses to bring their ideas to the digital world without the
-            need for technical skills.
+            {`We are passionate about providing students with the tools they need
+            to build their digital presence. Our platform is designed to make
+            website creation simple, intuitive, and accessible for everyone.
+            Whether you're sharing your research, blogging your ideas, or
+            showcasing your achievements, we’re here to help you stand out. Join
+            us in creating a world where every student can share their voice and
+            talents with confidence!`}{" "}
           </p>
         </div>
       </div>
@@ -69,18 +70,19 @@ function AboutUs({ showHeroSection = true }) {
           </span>
 
           <h1 data-aos="fade-down" className="mt-10 text-3xl font-extrabold">
-            Why DIY – Simple, Fast, and Tailored to You{" "}
+            Empowering Students for Free – Your Creativity, Unleashed.{" "}
           </h1>
 
           <p
             data-aos="fade-up"
             className="mt-2 text-lg text-opacity-85 text-justify font_barlow"
           >
-            At DIY, we put you in the driver’s seat of website creation. Our
-            platform combines simplicity with flexibility, letting you choose
-            from expertly crafted templates and customize every detail to match
-            your brand. DIY is all about making website building easy, fast, and
-            accessible to everyone – so you can launch with confidence.
+            At DIY, we believe in empowering everyone to showcase their
+            creativity and achievements without limitations. With completely
+            free tools, a user-friendly interface, and customizable templates,
+            our platform ensures that website building is simple, intuitive, and
+            fast. Go live in minutes and share your ideas with the world –
+            because your vision deserves to be seen, all at no cost.
           </p>
 
           <div className="flex flex-col mt-5 gap-y-3">
@@ -111,7 +113,7 @@ function AboutUs({ showHeroSection = true }) {
               </div>
             </div>
           </div> */}
-          <div className="p-10" >
+          <div className="p-10">
             <MediaPlayer src={"/videos/Web Development.json"} />
           </div>
         </div>
