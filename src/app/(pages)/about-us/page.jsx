@@ -37,7 +37,7 @@ function AboutUs({ showHeroSection = true }) {
 
         {/* right side  */}
         <div className="bg-white text-black p-10">
-          <span className="inline-block mt-20 text-2xl uppercase border-b-4 border-red-600">
+          <span className="inline-block mt-20 text-2xl uppercase border-b-4 border[#1B94A6]">
             About Us
           </span>
 
@@ -61,21 +61,21 @@ function AboutUs({ showHeroSection = true }) {
       </div>
 
       {/* why choose we  */}
-      <div className="min-h-[90vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-x-10 bg-red-500 p-10">
+      <div className="min-h-[90vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-x-10 bg-white p-10">
         {/* left side  */}
 
         <div className="text-white">
-          <span className="inline-block mt-20 text-2xl uppercase border-b-4 border-black">
+          <span className="text-black inline-block mt-20 text-2xl uppercase border-b-4 border-[#1B94A6]">
             Why Choose Us
           </span>
 
-          <h1 data-aos="fade-down" className="mt-10 text-3xl font-extrabold">
+          <h1 data-aos="fade-down" className="text-black mt-10 text-3xl font-extrabold">
             Empowering Students for Free – Your Creativity, Unleashed.{" "}
           </h1>
 
           <p
             data-aos="fade-up"
-            className="mt-2 text-lg text-opacity-85 text-justify font_barlow"
+            className="text-black mt-2 text-lg text-opacity-85 text-justify font_barlow"
           >
             At DIY, we believe in empowering everyone to showcase their
             creativity and achievements without limitations. With completely
@@ -85,7 +85,7 @@ function AboutUs({ showHeroSection = true }) {
             because your vision deserves to be seen, all at no cost.
           </p>
 
-          <div className="flex flex-col mt-5 gap-y-3">
+          <div className="text-white flex flex-col mt-5 gap-y-3">
             {cardsDetail.map(({ title, description }) => (
               <AboutUsCard
                 key={title}

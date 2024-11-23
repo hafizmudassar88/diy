@@ -12,7 +12,7 @@ import FaCarSide from "../../../public/images/diy.svg";
 function Footer() {
   return (
     <>
-      <footer className="footer bg-base-200 text-base-content p-10 md:grid md:grid-cols-4 font_barlow">
+      <footer className="footer bg-white text-base-content p-10 md:grid md:grid-cols-4 font_barlow">
         <aside data-aos="fade-up">
           <div className="flex-shrink-0">
             <Link href="/">
@@ -38,81 +38,81 @@ function Footer() {
           {/* social media link  */}
           <div className="flex justify-center items-center gap-x-2 ">
             <Link href={"/"}>
-              <CiFacebook className="text-[2rem] text-red-500 hover:scale-110 hover:font-semibold transition-all" />
+              <CiFacebook className="text-[2rem] text-black-500 hover:scale-110 hover:font-semibold transition-all" />
             </Link>
             <Link href={"/"}>
-              <IoLogoInstagram className="text-3xl text-red-500 hover:scale-110 hover:font-semibold transition-all" />
+              <IoLogoInstagram className="text-3xl text-black-500 hover:scale-110 hover:font-semibold transition-all" />
             </Link>
             <Link href={"/"}>
-              <AiOutlineYoutube className="text-4xl text-red-500 hover:scale-110 hover:font-semibold transition-all" />
+              <AiOutlineYoutube className="text-4xl text-black-500 hover:scale-110 hover:font-semibold transition-all" />
             </Link>
           </div>
         </aside>
         <nav className="md:ms-10" data-aos="fade-up">
-          <h6 className="footer-title text-red-500">Quick Links</h6>
+          <h6 className="footer-title text-[#1B94A6]">Quick Links</h6>
           <Link
             href={"/"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             Home
           </Link>
           <Link
             href={"/about-us"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             About Us
           </Link>
           <Link
             href={"/"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             Services
           </Link>
-          {/* <Link
+          <Link
             href={"/gallery"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             Gallery
-          </Link> */}
+          </Link>
           <Link
             href={"/contact-us"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             Contact Us
           </Link>
           <Link
             href={"/booking"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             Sign Up
           </Link>
         </nav>
         <nav data-aos="fade-up">
-          <h6 className="footer-title text-red-500">Services</h6>
+          <h6 className="footer-title text-[#1B94A6]">Services</h6>
           <Link
             // href={"/customizable-template"}
             href={"/"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             Customizable Templates
           </Link>
           <Link
             href={"/"}
             // href={"/content-management-service"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             CMS for Dynamic Content Management
           </Link>
           <Link
             href={"/"}
             // href={"/hosting-publishing"}
-            className="text-decoration-none hover:text-red-500 hover:font-semibold"
+            className="text-decoration-none hover:text-[#1B94A6] hover:font-semibold"
           >
             Free Hosting and Publishing
           </Link>
         </nav>
         <nav data-aos="fade-up">
-          <h6 className="footer-title text-red-500">Contact Us</h6>
+          <h6 className="footer-title text-[#1B94A6]">Contact Us</h6>
           <div className="cursor-pointer">
             <div className="flex gap-x-2 items-center">
               <MdOutlinePhoneInTalk className="text-lg" />
@@ -145,7 +145,7 @@ function Footer() {
         </nav>
       </footer>
 
-      <div className="relative mt-18 overflow-hidden h-20 bg-transparent border-b border-gray-500">
+      <div className="relative mt-18 overflow-hidden h-20 bg-white border-b border-[#1B94A6]">
         <motion.div
           className="absolute bottom-0 left-0 w-full h-full flex justify-center items-center"
           animate={{ x: ["-100%", "100%"] }}
@@ -161,9 +161,9 @@ function Footer() {
 
       <footer
         data-aos="fade-right"
-        className="footer bg-base-200 text-base-content flex flex-col p-5"
+        className="footer bg-[white] text-base-content flex flex-col p-5"
       >
-        <p className="text-start text-red-500">
+        <p className="text-start text-[#1B94A6]">
           Copyright © 2023, DIY Builders. All Rights Reserved.
         </p>
       </footer>

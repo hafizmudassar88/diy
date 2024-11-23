@@ -59,7 +59,7 @@ function Services({ showHeroSection = true, limit }) {
       ) : (
         <div className="bg-white grid grid-cols-1 md:grid-cols-[3fr_1fr]">
           <div className="bg-white text-black/90 flex flex-col items-start pl-10 gap-2 pb-5">
-            <span className="inline-block mt-14 text-2xl uppercase text-red-600">
+            <span className="inline-block mt-14 text-2xl uppercase text-[black]">
               Our Services
             </span>
 

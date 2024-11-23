@@ -3,18 +3,13 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 const servicesMenu = [
-  // { title: "Customizable Templates", url: "/customizable-template" },
-  { title: "Customizable Templates", url: "/" },
-  // {
-  //   title: "CMS for Dynamic Content Management",
-  //   url: "/content-management-service",
-  // },
+  { title: "Customizable Templates", url: "/customizable-template" },
   {
     title: "CMS for Dynamic Content Management",
-    url: "/",
+    url: "/content-management-service",
   },
-  // { title: "Free Hosting and Publishing", url: "/hosting-publishing" },
-  { title: "Free Hosting and Publishing", url: "/" },
+
+  { title: "Free Hosting and Publishing", url: "/hosting-publishing" },
 ];
 
 function Navbar() {
@@ -44,7 +39,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="navbar bg-base-200 font_barlow p-10 flex justify-between max-h-[4vh] max-w-[80vw] rounded-3xl fixed top-1 left-0 right-0 mx-auto z-50 mt-5">
+    <div className="navbar bg-[white] font_barlow p-10 flex justify-between max-h-[4vh] max-w-[80vw] rounded-3xl fixed top-1 left-0 right-0 mx-auto z-50 mt-5">
       {/* Navbar start */}
       <div className="navbar-start">
         {/* Burger icon on the small screens */}
@@ -67,7 +62,7 @@ function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm bg-base-200 dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow text-red-500 z-20"
+            className="menu menu-sm bg-base-200 dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow text-[#1B94A6] !important z-20"
           >
             <li>
               <Link href={"/"}>Home</Link>
@@ -82,10 +77,10 @@ function Navbar() {
                   onClick={() => setServicesOpen(!isServicesOpen)}
                   className="flex justify-between w-full"
                 >
-                  Servicesssssss
+                  Services
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 text-red-600 ml-2"
+                    className="h-5 w-5 text-[#1B94A6] !important ml-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -142,7 +137,7 @@ function Navbar() {
 
       {/* Navbar middle part */}
       <div className="navbar-center hidden lg:flex font-semibold">
-        <ul className="menu menu-horizontal px-1 text-red-500">
+        <ul className="menu menu-horizontal px-1 text-[#1B94A6] !important">
           <li className="m-1">
             <Link href={"/"} className="me-1 w-full">
               Home
@@ -180,7 +175,7 @@ function Navbar() {
       <div className="navbar-end hidden lg:flex lg:justify-end">
         <Link
           href={"/signup"}
-          className="btn bg-red-600 text-white hover:bg-red-600 hover:scale-110"
+          className="btn bg-[#1B94A6] !important] text-white hover:bg-[#1B94A6] hover:scale-110"
         >
           Sign Up Now
         </Link>

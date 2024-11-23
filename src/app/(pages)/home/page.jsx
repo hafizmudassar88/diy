@@ -26,7 +26,7 @@ function Home() {
       }}
     >
       {/* hero section  */}
-      <div className="relative min-h-screen bg-center bg-no-repeat bg-cover bg-black ">
+      <div className="relative min-h-screen bg-center bg-no-repeat bg-cover bg-white ">
         <div className="absolute inset-0 bg-[url('/images/customizable-template-scaled-1.png')] bg-center bg-no-repeat bg-cover opacity-[0.26] transition-all duration-300"></div>
         <div className="relative z-10 text-center md:text-start">
           <div className="w-full h-full flex flex-col md:flex-row pt-32 px-5 ">
@@ -36,19 +36,19 @@ function Home() {
                 delay={2500}
                 speed={5}
                 deletionSpeed={40}
-                className="inline-block pe-3 transition-all text-white mt-20 md:text-2xl uppercase border-b-4 border-red-600"
+                className="inline-block pe-3 transition-all text-black mt-20 md:text-2xl uppercase border-b-4 border-[#1B94A6]-600"
               />
 
               <h1
                 data-aos="fade-down"
-                className="text-white mt-10 text-2xl md:text-5xl font-extrabold"
+                className="text-black mt-10 text-2xl md:text-5xl font-extrabold"
               >
                 Showcase Your Knowledge – Build Your Website, Your Way!{" "}
               </h1>
 
               <p
                 data-aos="fade-up"
-                className="text-white mt-10 md:mt-1 text-justify md:text-start md:text-lg font-semibold text-opacity-85 font_barlow"
+                className="text-black mt-10 md:mt-1 text-justify md:text-start md:text-lg font-semibold text-opacity-85 font_barlow"
               >
                 Empower your academic journey with a platform designed for
                 students. Create stunning websites to showcase your blogs,
@@ -61,7 +61,7 @@ function Home() {
               <div data-aos="fade-right" className="mt-10">
                 <Link
                   href={"/signup"}
-                  className="btn bg-red-600 text-white text-xl w-40 border-0 hover:bg-red-600 hover:scale-110"
+                  className="btn bg-[#1B94A6] text-white text-xl w-40 border-0 hover:bg-red-600 hover:scale-110"
                 >
                   Sign Up Now
                 </Link>
@@ -69,7 +69,7 @@ function Home() {
             </div>
 
             <div
-              className="md:grow-1 w-full h-full order-1 md:order-2 items-center bg-red-600 rounded-full mt-10 md:mt-20"
+              className="md:grow-1 w-full h-full order-1 md:order-2 items-center bg-white rounded-full mt-10 md:mt-20"
               data-aos="fade-right"
             >
               <MediaPlayer
@@ -85,7 +85,7 @@ function Home() {
 
       <div className="bg-white pb-10">
         <div className="bg-white flex flex-col justify-center items-center text-black p-10">
-          <span className="inline-block mt-20 text-2xl uppercase border-b-4 border-red-600">
+          <span className="inline-block mt-20 text-2xl uppercase border-b-4 border-[#1B94A6]">
             Testimonials
           </span>
 
@@ -99,15 +99,15 @@ function Home() {
         </div>
       </div>
 
-      <div className="min-h-[80vh] bg-black/70 text-white flex flex-col justify-center items-center gap-y-5 px-[20%]">
+      <div className="min-h-[80vh] bg-white text-white flex flex-col justify-center items-center gap-y-5 px-[20%]">
         <h1
           data-aos="fade-right"
-          className="mt-10 text-center text-3xl font-extrabold"
+          className="mt-10 text-center text-3xl font-extrabold text-black"
         >
           Get in Touch with Us for Your Website Creation Journey{" "}
         </h1>
 
-        <h1 data-aos="fade-left" className="mt-4 text-center text-lg ">
+        <h1 data-aos="fade-left" className="mt-4 text-center text-lg text-black">
           Thank you for choosing our platform to build your online presence.
           We’re here to support you every step of the way. Whether you have
           questions, need assistance, or want to share feedback, we’d love to
@@ -118,7 +118,7 @@ function Home() {
         <Link
           href={"/contact-us"}
           data-aos="fade-up"
-          className="btn mb-5 border-0 bg-red-600 text-white hover:bg-red-600 hover:scale-110"
+          className="btn mb-5 border-0 bg-[#1B94A6]  text-white hover:bg-[#1B94A6] hover:scale-110"
         >
           Contact Us
         </Link>

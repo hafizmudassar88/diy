@@ -41,7 +41,8 @@ const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
           className="w-full h-auto"
         />
       ) : (
-        <p>Unsupported media type: {fileType}</p>
+        // <p>Unsupported media type: {fileType}</p>
+        ""
       )}
     </div>
   );

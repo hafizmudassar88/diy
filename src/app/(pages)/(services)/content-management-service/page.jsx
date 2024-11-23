@@ -27,7 +27,7 @@ function ContentManagementService() {
 
         {/* right side  */}
         <div className="bg-white text-black p-10">
-          <span className="inline-block mt-5 text-2xl uppercase border-b-4 border-red-600">
+          <span className="inline-block mt-5 text-2xl uppercase border-b-4 border-[#1B94A6]">
             CMS for Dynamic Content Management
           </span>
 

@@ -28,7 +28,7 @@ function ServiceCard({ image = "", title = "", description = "", url = "" }) {
             src={image}
             height="1000"
             width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl border-2 border-red-200"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl border-2 border-[#1B94A6]-200"
             alt="thumbnail"
           />
         </CardItem>
@@ -37,7 +37,7 @@ function ServiceCard({ image = "", title = "", description = "", url = "" }) {
             translateZ={20}
             as={Link}
             href={url}
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+            className="px-4 py-2 rounded-xl bg-black bg-[#1B94A6] dark:text-black text-white text-xs font-bold"
           >
             Read More
           </CardItem>

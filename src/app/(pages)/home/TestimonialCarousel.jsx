@@ -47,7 +47,7 @@ export function TestimonialCarousel() {
               className="flex-none w-full md:w-1/3 cursor-grab select-none "
             >
               <div className="p-4 h-full">
-                <Card className="bg-red-600 text-white rounded-3xl h-full flex flex-col">
+                <Card className="bg-[#1B94A6] text-white rounded-3xl h-full flex flex-col">
                   <CardContent className="flex flex-col items-center justify-center p-6 py-12 flex-1 ">
                     <p className="text-lg italic mb-4 text-center">
                       {testimonial.comment}
@@ -61,8 +61,8 @@ export function TestimonialCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-red-500 text-white border-0 hover:bg-red-600 hover:text-white" />
-        <CarouselNext className="bg-red-500 text-white border-0 hover:bg-red-600 hover:text-white" />
+        <CarouselPrevious className="bg[#1B94A6] text-bg[#1B94A6] border-0 hover:bg[#1B94A6] hover:[#1B94A6]" />
+        <CarouselNext className="bg[#1B94A6] text-bg[#1B94A6] border-0 hover:bg[#1B94A6] hover:[#1B94A6]" />
       </Carousel>
     </div>
   );
