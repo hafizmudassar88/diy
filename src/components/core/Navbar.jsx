@@ -30,12 +30,11 @@ function Navbar() {
     };
 
     // Attach event listener
-    document.addEventListener("mousedown", handleClickOutside);
+    // document.addEventListener("mousedown", handleClickOutside);
 
     // Cleanup event listener on component unmount
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    // return () => { ventListener("mousedown", handleClickOutside);
+    // };
   }, []);
 
   return (

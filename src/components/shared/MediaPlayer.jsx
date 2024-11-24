@@ -3,7 +3,13 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Lottie from "lottie-react";
 
-const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
+// MediaPlayer Component
+const MediaPlayerComponent = ({
+  src,
+  loop = true,
+  autoplay = true,
+  className = "",
+}) => {
   const [animationData, setAnimationData] = useState(null);
   const [error, setError] = useState(false);
   const fileType = src.split(".").pop(); // Determine the file extension
@@ -13,8 +19,11 @@ const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
       if (fileType === "json") {
         try {
           const response = await fetch(src);
-          if (!response.ok)
-            throw new Error(`Failed to fetch: ${response.statusText}`);
+          if (!response.ok) {
+            throw new Error(
+              `Failed to fetch JSON file: ${response.statusText}`
+            );
+          }
           const data = await response.json();
           setAnimationData(data);
         } catch (err) {
@@ -42,7 +51,10 @@ const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
           loop={loop}
           autoPlay={autoplay}
           className="w-full h-auto"
-        />
+        >
+          {/* Fallback message if the video fails */}
+          Your browser does not support the video tag.
+        </video>
       ) : (
         <p className="text-red-500">Unsupported media type: {fileType}</p>
       )}
@@ -50,4 +62,9 @@ const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
   );
 };
 
-export default dynamic(() => Promise.resolve(MediaPlayer), { ssr: false });
+// Export using dynamic import with SSR disabled
+const MediaPlayer = dynamic(() => Promise.resolve(MediaPlayerComponent), {
+  ssr: false,
+});
+
+export default MediaPlayer;
