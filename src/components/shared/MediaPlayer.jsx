@@ -1,25 +1,24 @@
 "use client";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Lottie from "lottie-react";
 
 const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
   const [animationData, setAnimationData] = useState(null);
+  const [error, setError] = useState(false);
   const fileType = src.split(".").pop(); // Determine the file extension
 
   useEffect(() => {
     const loadMedia = async () => {
       if (fileType === "json") {
-        // Fetch the animation JSON file
         try {
           const response = await fetch(src);
-          if (!response.ok) {
-            return console.log(
-              `Failed to fetch animation from ${src}: ${response.statusText}`
-            );
-          }
+          if (!response.ok)
+            throw new Error(`Failed to fetch: ${response.statusText}`);
           const data = await response.json();
           setAnimationData(data);
         } catch (err) {
+          setError(true);
           console.error(err);
         }
       }
@@ -30,7 +29,11 @@ const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
 
   return (
     <div className={className}>
-      {fileType === "json" && animationData ? (
+      {error ? (
+        <p className="text-red-500">
+          Failed to load media. Please try again later.
+        </p>
+      ) : fileType === "json" && animationData ? (
         <Lottie animationData={animationData} loop={loop} autoplay={autoplay} />
       ) : fileType === "mp4" ? (
         <video
@@ -41,11 +44,10 @@ const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
           className="w-full h-auto"
         />
       ) : (
-        // <p>Unsupported media type: {fileType}</p>
-        ""
+        <p className="text-red-500">Unsupported media type: {fileType}</p>
       )}
     </div>
   );
 };
 
-export default MediaPlayer;
+export default dynamic(() => Promise.resolve(MediaPlayer), { ssr: false });
