@@ -7,11 +7,11 @@ import Button from "./Button";
 const About = () => {
   return (
     <>
-      <div className="text-center my-16 max-w-7xl mx-auto px-5 bg-goldenDark rounded-lg ">
-        <h1 className="text-[32px] text-secondaryDark font-semibold py-5">
+      <div className="text-center my-16 max-w-7xl mx-auto px-5 bg-[#1B94A6] rounded-lg ">
+        <h1 className="text-[32px] text-white font-semibold py-5">
           Explore Our Services
         </h1>
-        <p className="text-secondaryDark">
+        <p className="text-white">
           Browse our extensive inventory of new and pre-owned vehicles. Our
           expert team carefully selects each car, ensuring high standards of
           quality, reliability, and value. From sleek convertibles to
@@ -48,7 +48,7 @@ const Card = ({ title, description, buttonText, imageUrl }) => {
         />
       </div>
       <div className="p-6">
-        <h2 className="text-xl font-semibold text-goldenDark mb-2">{title}</h2>
+        <h2 className="text-xl font-semibold text-[#1B94A6] mb-2">{title}</h2>
         <p className="text-gray-600 mb-4">{description}</p>
         <div className="flex justify-center">
           <Button link="" text={buttonText} />

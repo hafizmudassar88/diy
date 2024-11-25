@@ -14,12 +14,6 @@ const HeroSection = dynamic(
     ssr: false,
   }
 );
-const MediaPlayer = dynamic(
-  () => import("../../../components/shared/MediaPlayer"),
-  {
-    ssr: false,
-  }
-);
 
 function ContactUs() {
   const {

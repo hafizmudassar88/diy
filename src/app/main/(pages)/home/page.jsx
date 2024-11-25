@@ -4,7 +4,6 @@ import AboutUs from "../about-us/page";
 import Services from "../(services)/services/page";
 import { TestimonialCarousel } from "./TestimonialCarousel";
 import TypeWriter from "../../../../components/shared/TypeWriter";
-// import MediaPlayer from "components/shared/MediaPlayer";
 import MediaPlayer from "../../../../components/shared/MediaPlayer";
 const typewriterStrings = [
   "From Research to Recognition – Build Your Student Portfolio with Ease!",

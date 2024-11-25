@@ -5,7 +5,7 @@ import bannerImage from "../../../../../../public/images/bannerImage.png";
 
 const Description = () => {
   return (
-    <div className="bg-goldenLight w-full md:min-h-[80vh] md:mt-16 flex md:flex-row flex-col ">
+    <div className="bg-[#1B94A6] w-full md:min-h-[80vh] md:mt-16 flex md:flex-row flex-col ">
       <div className="md:w-1/2 ">
         <div className="flex justify-center items-center min-h-[80vh]">
           {" "}
@@ -24,10 +24,10 @@ const Description = () => {
         </div>
       </div>
       <div className="md:w-1/2 flex justify-center items-center flex-col py-4">
-        <h1 className="text-[32px] text-secondaryDark font-semibold py-5 ">
+        <h1 className="text-[32px] text-white font-semibold py-5 ">
           Redefining Elegance with DIY
         </h1>
-        <p className="text-secondaryDark px-6">
+        <p className="text-white px-6">
           At DIY, we believe that style is an expression of individuality, and
           elegance is timeless. Our mission is to create products that blend
           modern trends with classic sophistication, crafted with the highest

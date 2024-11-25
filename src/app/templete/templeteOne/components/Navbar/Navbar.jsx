@@ -29,7 +29,7 @@ const NavbarTemplete = () => {
                 className={`text-[16px] font-normal border-b-2 transition-all duration-300 ease-in-out ${
                   isActive
                     ? "text-primaryDark border-primaprimaryLightryActive"
-                    : "border-transparent hover:text-goldenDark hover:border-goldenDark"
+                    : "border-transparent hover:text-[#1B94A6] hover:border-[#1B94A6]"
                 }`}
                 key={index}
                 href={item.url}
@@ -40,7 +40,7 @@ const NavbarTemplete = () => {
           })}
           <Link
             href="/templete/editor/Home/Hero"
-            className="px-4 py-2 bg-goldenDark text-white font-semibold rounded "
+            className="px-4 py-2 bg-[#1B94A6] text-white font-semibold rounded "
           >
             Choose Templete
           </Link>

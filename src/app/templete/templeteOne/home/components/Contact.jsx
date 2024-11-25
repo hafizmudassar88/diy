@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <div className=" flex lg:flex-row flex-col md:mt-16 ">
         <div className="flex flex-col lg:w-1/3 justify-center items-center mt-5">
-          <p className="text-goldenDark text-[32px] text-start font-semibold">
+          <p className="text-[#1B94A6] text-[32px] text-start font-semibold">
             Contact Us
           </p>
           <p>Any question or remarks? Just write us a message!</p>
@@ -18,7 +18,7 @@ const Contact = () => {
           >
             <div className="">
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none   
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-[#1B94A6] bg-white ring-2 ring-[#1B94A6] leading-tight focus:outline-none   
  focus:shadow-outline"
                 id="name"
                 name="name"
@@ -31,7 +31,7 @@ const Contact = () => {
             <div className="mb-4">
                
               <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none   
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-[#1B94A6] bg-white ring-2 ring-[#1B94A6] leading-tight focus:outline-none   
  focus:shadow-outline"
                 id="email"
                 name="email"
@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="mb-4">
               <textarea
                 className="shadow appearance-none   
- border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+ border rounded w-full py-2 px-3 text-[#1B94A6] bg-white ring-2 ring-[#1B94A6] leading-tight focus:outline-none focus:shadow-outline"
                 id="message"
                 name="message"
                 placeholder="Enter your message"
@@ -53,8 +53,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <div
-              className="flex items-center   
- justify-between"
+              className="flex items-center justify-between"
             >
               <Button link="#" text="Submit" />
             </div>
@@ -63,11 +62,11 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col lg:w-1/3 justify-center items-center ">
-          <p className="text-goldenDark text-[32px] text-start font-semibold">
+          <p className="text-[#1B94A6] text-[32px] text-start font-semibold">
             Contact Us
           </p>
           <p>info@DIY.com</p>
-          <p className="text-goldenDark text-[32px] text-start font-semibold mt-5">
+          <p className="text-[#1B94A6] text-[32px] text-start font-semibold mt-5">
             Address
           </p>
           <p>Pakistan</p>

@@ -55,7 +55,7 @@ const BlogsPage = () => {
           className={`px-4 py-2 border rounded-lg ${
             currentPage === 1
               ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-              : "bg-goldenDark text-white hover:bg-goldenDark"
+              : "bg-[#1B94A6] text-white hover:bg-[#1B94A6]"
           }`}
         >
           Previous
@@ -69,7 +69,7 @@ const BlogsPage = () => {
           className={`px-4 py-2 border rounded-lg ${
             currentPage === totalPages
               ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-              : "bg-goldenDark text-white hover:bg-goldenDark"
+              : "bg-[#1B94A6] text-white hover:bg-[#1B94A6]"
           }`}
         >
           Next

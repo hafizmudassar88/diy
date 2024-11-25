@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { IoLocationOutline } from "react-icons/io5";
 import { LuPhoneCall } from "react-icons/lu";
 import { MdOutlineAttachEmail } from "react-icons/md";
 import { HeroSection } from "../../../../components/shared/HeroSection";
-import MediaPlayer from "../../../../components/shared/MediaPlayer";
 
 function ContactUs() {
   const {
