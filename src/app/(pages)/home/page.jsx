@@ -4,7 +4,10 @@ import AboutUs from "../about-us/page";
 import Services from "../(services)/services/page";
 import { TestimonialCarousel } from "./TestimonialCarousel";
 import TypeWriter from "@/components/shared/TypeWriter";
-import MediaPlayer from "@/components/shared/MediaPlayer";
+import dynamic from "next/dynamic";
+const MediaPlayer = dynamic(() => import("@/components/shared/MediaPlayer"), {
+  ssr: false,
+});
 
 const typewriterStrings = [
   "From Research to Recognition – Build Your Student Portfolio with Ease!",
@@ -107,7 +110,10 @@ function Home() {
           Get in Touch with Us for Your Website Creation Journey{" "}
         </h1>
 
-        <h1 data-aos="fade-left" className="mt-4 text-center text-lg text-black">
+        <h1
+          data-aos="fade-left"
+          className="mt-4 text-center text-lg text-black"
+        >
           Thank you for choosing our platform to build your online presence.
           We’re here to support you every step of the way. Whether you have
           questions, need assistance, or want to share feedback, we’d love to
