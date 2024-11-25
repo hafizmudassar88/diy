@@ -1,5 +1,5 @@
-import { HeroSection } from "@/components/shared";
-import ServiceProcedureCard from "@/components/shared/ServiceProcedureCard";
+import { HeroSection } from "../../../../components/shared";
+import ServiceProcedureCard from "../../../../components/shared/ServiceProcedureCard";
 import React from "react";
 
 function ContentManagementService() {
@@ -8,9 +8,7 @@ function ContentManagementService() {
       {/* hero section  */}
       <HeroSection
         bgImage={"/images/10bea6_143823941f044c608861fb59b181b31d_mv2.jpg"}
-        title={
-          "CMS for Dynamic Content Management"
-        }
+        title={"CMS for Dynamic Content Management"}
         subtitle={"CMS for Dynamic Content Management"}
       />
 

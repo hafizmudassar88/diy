@@ -5,9 +5,12 @@ import dynamic from "next/dynamic";
 import { AboutUsCard, HeroSection } from "../../../components/shared";
 
 // Dynamically import MediaPlayer to prevent SSR issues
-const MediaPlayer = dynamic(() => import("@/components/shared/MediaPlayer"), {
-  ssr: false,
-});
+const MediaPlayer = dynamic(
+  () => import("../../../components/shared/MediaPlayer"),
+  {
+    ssr: false,
+  }
+);
 
 const cardsDetail = [
   {

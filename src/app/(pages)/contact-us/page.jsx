@@ -8,12 +8,18 @@ import { LuPhoneCall } from "react-icons/lu";
 import { MdOutlineAttachEmail } from "react-icons/md";
 
 // Dynamically import components
-const HeroSection = dynamic(() => import("@/components/shared/HeroSection"), {
-  ssr: false,
-});
-const MediaPlayer = dynamic(() => import("@/components/shared/MediaPlayer"), {
-  ssr: false,
-});
+const HeroSection = dynamic(
+  () => import("../../../components/shared/HeroSection"),
+  {
+    ssr: false,
+  }
+);
+const MediaPlayer = dynamic(
+  () => import("../../../components/shared/MediaPlayer"),
+  {
+    ssr: false,
+  }
+);
 
 function ContactUs() {
   const {
