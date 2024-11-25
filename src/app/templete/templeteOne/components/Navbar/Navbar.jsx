@@ -20,7 +20,7 @@ const NavbarTemplete = () => {
         <div className="">
           <Image src={logo} alt="ShwraLogo" width={100} />
         </div>
-        <div className=" flex  flex-row gap-12">
+        <div className=" flex justify-center items-center h-16  flex-row gap-12 ">
           {navItems?.map((item, index) => {
             const isActive = pathname === item.url;
 
@@ -38,6 +38,12 @@ const NavbarTemplete = () => {
               </Link>
             );
           })}
+          <Link
+            href="/templete/editor/Home/Hero"
+            className="px-4 py-2 bg-goldenDark text-white font-semibold rounded "
+          >
+            Choose Templete
+          </Link>
         </div>
       </div>
 

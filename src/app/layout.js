@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import StoreProvider from "../redux/store/StoreProvider";
 import Navbar from "../components/core/Navbar";
 import Footer from "../components/core/Footer"; // Fixed Footer import path
 
@@ -53,7 +53,9 @@ export default function RootLayout({ children }) {
       >
         <Toaster position="top-center" reverseOrder={false} />
         {/* <Navbar /> */}
-        <main className="w-full h-full">{children}</main>
+        <StoreProvider>
+          <main className="w-full h-full">{children}</main>
+        </StoreProvider>
         {/* <Footer /> */}
       </body>
     </html>

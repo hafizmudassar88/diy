@@ -32,7 +32,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center custom-font h- md:mb-16 mb-8 md:mt-16 mt-32 flex-col">
+    <div className="flex justify-center items-center custom-font h-[90vh] md:mb-16 mb-8 md:mt-16 mt-32 flex-col">
       <form className="flex max-w-lg gap-4 w-full rounded-xl flex-col md:px-0 px-3">
         <span className="text-3xl font-normal text-[#173039]">Sign Up</span>
 
@@ -151,7 +151,7 @@ export default function Login() {
           <p className="text-sm text-gray-600">
             {"Already have an account?"}{" "}
             <Link
-              href={`/auth/login`}
+              href={`/main/auth/login`}
               className="font-normal text-primary-color hover:underline"
             >
               Login
