@@ -115,7 +115,7 @@ function Navbar() {
         </div>
 
         <div className="flex-shrink-0 p-2 hidden lg:block">
-          <Link href={"/"}>
+          <Link href={"/main/"}>
             <img
               src="/images/diy.svg" // logo path
               alt="Company Logo"
@@ -126,7 +126,7 @@ function Navbar() {
       </div>
 
       <div className="flex-shrink-0 p-2 block lg:hidden">
-        <Link href={"/"}>
+        <Link href={"/main/"}>
           <img
             src="/images/diy.svg" // logo path
             alt="Company Logo"
@@ -145,7 +145,7 @@ function Navbar() {
           </li>
 
           <li className="m-1 relative group">
-            <Link href={"/"} className="w-full">
+            <Link href={"/main/about-us"} className="w-full">
               Services
             </Link>
             <ul className="absolute bg-base-200 border-0 top-7 left-0 p-2 w-[15rem] bg-base-100 rounded-box shadow mt-2 hidden group-hover:block z-20">
@@ -159,12 +159,12 @@ function Navbar() {
             </ul>
           </li>
           <li className="m-1">
-            <Link href={"/about-us"} className="w-full">
+            <Link href={"/main/about-us"} className="w-full">
               About Us
             </Link>
           </li>
           <li className="m-1">
-            <Link href={"/contact-us"} className="w-full">
+            <Link href={"/main/contact-us"} className="w-full">
               Contact Us
             </Link>
           </li>
@@ -174,7 +174,7 @@ function Navbar() {
       {/* Navbar end */}
       <div className="navbar-end hidden lg:flex lg:justify-end">
         <Link
-          href={"/signup"}
+          href={"/main/auth/register"}
           className="btn bg-[#1B94A6] !important] text-white hover:bg-[#1B94A6] hover:scale-110"
         >
           Sign Up Now
