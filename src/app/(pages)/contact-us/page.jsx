@@ -30,16 +30,10 @@ function ContactUs() {
 
   return (
     <div className="bg-white overflow-x-hidden">
-      {/* Hero Section */}
-      <HeroSection
-        bgImage="/images/content-management-service-for-cars.jpg"
-        title="Contact Us"
-        subtitle="Contact Us"
-      />
 
-      {/* Contact Us Section */}
-      <div className="w-full bg-white text-black flex flex-col items-center gap-2 pb-5">
-        <span className="inline-block mt-20 text-2xl uppercase border-b-4 border-red-600">
+      {/* contact us section  */}
+      <div className="w-full bg-white text-[#1B94A6] flex flex-col items-center gap-2 pb-5">
+        <span className="inline-block mt-20 text-2xl uppercase border-b-4 border-[#1B94A6]">
           Contact Us
         </span>
 
@@ -49,86 +43,128 @@ function ContactUs() {
         >
           Get In Touch Today
         </p>
+
         <p
           data-aos="fade-up"
           className="mt-2 text-md text-opacity-85 font_barlow text-center p-2"
         >
-          Get in Touch with Us for Your Website Creation Journey
+          Get in Touch with Us for Your Website Creation Journey{" "}
         </p>
       </div>
 
-      {/* Contact Details */}
+      {/* contact details  */}
       <div className="min-h-[40vh] grid grid-cols-1 md:grid-cols-3 gap-5 m-5 md:mx-10">
-        {[
-          {
-            icon: <IoLocationOutline className="text-5xl text-white" />,
-            title: "Address",
-            content: "4 Highfield Street, Ladera Ranch, London, UK SW1A 1AA",
-          },
-          {
-            icon: <LuPhoneCall className="text-5xl text-white" />,
-            title: "Phone Number",
-            content: "+44 20 7946 0958",
-          },
-          {
-            icon: <MdOutlineAttachEmail className="text-5xl text-white" />,
-            title: "Our Mailbox",
-            content: "diybuilders@gmail.com",
-          },
-        ].map(({ icon, title, content }) => (
-          <div
-            key={title}
-            className="bg-[#020202] flex flex-col gap-5 items-center justify-center rounded-3xl text-white p-5"
-          >
-            <div className="bg-[#ED1C24] w-20 h-20 rounded-full flex items-center justify-center">
-              {icon}
-            </div>
-            <h1 className="text-2xl font-bold">{title}</h1>
-            <p
-              data-aos="fade-up"
-              className="mt-2 text-md text-opacity-85 font_barlow text-center"
-            >
-              {content}
-            </p>
+        <div className="bg-[#1b93a671] flex flex-col gap-5 items-center justify-center rounded-3xl text-white p-5">
+          <div className="bg-[#1B94A6] w-20 h-20 rounded-full flex items-center justify-center">
+            <IoLocationOutline className="text-5xl text-white" />
           </div>
-        ))}
+
+          <h1 className="text-2xl font-bold">Address</h1>
+          <p
+            data-aos="fade-up"
+            className="mt-2 text-md text-opacity-85 font_barlow text-center "
+          >
+            4 Highfield Street, Ladera Ranch, London, UK SW1A 1AA
+          </p>
+        </div>
+        <div className="bg-[#1b93a671] flex flex-col gap-5 items-center justify-center rounded-3xl text-white p-5">
+          <div className="bg-[#1B94A6] w-20 h-20 rounded-full flex items-center justify-center">
+            <LuPhoneCall className="text-5xl text-white" />
+          </div>
+
+          <h1 className="text-2xl font-bold">Phone Number</h1>
+          <p
+            data-aos="fade-up"
+            className="mt-2 text-md text-opacity-85 font_barlow text-center "
+          >
+            +44 20 7946 0958
+          </p>
+        </div>
+        <div className="bg-[#1b93a671] flex flex-col gap-5 items-center justify-center rounded-3xl text-white p-5">
+          <div className="bg-[#1B94A6] w-20 h-20 rounded-full flex items-center justify-center">
+            <MdOutlineAttachEmail className="text-5xl text-white" />
+          </div>
+
+          <h1 className="text-2xl font-bold">Our Mailbox</h1>
+          <p
+            data-aos="fade-up"
+            className="mt-2 text-md text-opacity-85 font_barlow text-center "
+          >
+            diybuilders@gmail.com
+          </p>
+        </div>
       </div>
 
-      {/* Contact Form */}
-      <div className="min-h-[80vh] rounded-3xl grid grid-cols-1 md:grid-cols-[1fr_1fr] bg-white m-5 md:m-20">
-        {/* Form Section */}
+      {/* contact form  */}
+      <div className="min-h-[80vh] rounded-3xl grid grid-cols-1 bg-white m-5 md:m-20">
+        {/* left side  */}
         <div
-          className="text-black rounded-3xl shadow-xl bg-[#f4f4f4] p-5 md:p-10"
+          className=" text-[#1B94A6] rounded-3xl shadow-xl bg-[#f4f4f4] p-5 md:p-10 m-auto w-[70%]"
           data-aos="fade-right"
         >
           <form onSubmit={handleSubmit(onSubmit)}>
-            {[
-              { name: "name", type: "text", label: "Name" },
-              { name: "phone", type: "number", label: "Phone" },
-              { name: "email", type: "email", label: "Email" },
-            ].map(({ name, type, label }) => (
-              <div key={name} className="mb-4">
-                <label
-                  htmlFor={name}
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  {label}
-                </label>
-                <input
-                  type={type}
-                  id={name}
-                  {...register(name, { required: true })}
-                  className={`mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm ${
-                    errors[name] ? "border-red-500" : ""
-                  }`}
-                />
-                {errors[name] && (
-                  <p className="text-red-500 text-xs mt-2">
-                    {label} is required
-                  </p>
-                )}
-              </div>
-            ))}
+            {/* Name Field */}
+            <div className="mb-4">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                {...register("name", { required: true })}
+                className={`mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#1B94A6] focus:border-[#1B94A6] sm:text-sm ${
+                  errors.name ? "border-[#1B94A6]" : ""
+                }`}
+              />
+              {errors.name && (
+                <p className="text-[#1B94A6] text-xs mt-2">Name is required</p>
+              )}
+            </div>
+
+            {/* Phone Field */}
+            <div className="mb-4">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Phone
+              </label>
+              <input
+                type="number"
+                id="phone"
+                {...register("phone", { required: true })}
+                className={`mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#1B94A6] focus:border-[#1B94A6] sm:text-sm ${
+                  errors.phone ? "border-[#1B94A6]" : ""
+                }`}
+              />
+              {errors.email && (
+                <p className="text-[#1B94A6] text-xs mt-2">Phone is required</p>
+              )}
+            </div>
+
+            {/* Email Field */}
+            <div className="mb-4">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                {...register("email", { required: true })}
+                className={`mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#1B94A6] focus:border-[#1B94A6] sm:text-sm ${
+                  errors.email ? "border-[#1B94A6]" : ""
+                }`}
+              />
+              {errors.email && (
+                <p className="text-[#1B94A6] text-xs mt-2">Email is required</p>
+              )}
+            </div>
 
             {/* Message Field */}
             <div className="mb-4">
@@ -139,20 +175,21 @@ function ContactUs() {
                 Message
               </label>
               <textarea
+                type="text"
                 id="message"
                 {...register("message", { required: true })}
-                className={`mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm ${
-                  errors.message ? "border-red-500" : ""
+                className={`mt-1 bg-white block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#1B94A6] focus:border-[#1B94A6] sm:text-sm ${
+                  errors.message ? "border-[#1B94A6]" : ""
                 }`}
               />
-              {errors.message && (
-                <p className="text-red-500 text-xs mt-2">Message is required</p>
+              {errors.email && (
+                <p className="text-[#1B94A6] text-xs mt-2">Message is required</p>
               )}
             </div>
 
             <button
               type="submit"
-              className="w-full bg-red-600 text-white p-4 mt-10 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+              className="w-full bg-[#1B94A6] text-white p-4 mt-10 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-[#1B94A6] focus:ring-offset-2"
             >
               Send
             </button>
@@ -160,14 +197,14 @@ function ContactUs() {
         </div>
       </div>
 
-      {/* Location Map */}
+      {/* location  */}
       <div className="w-full h-[70vh]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.880349823941!2d-0.127758!3d51.503364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c243b1dc11%3A0x75b6d3b99c575a9a!2s4%20Highfield%20Street%2C%20Ladera%20Ranch%2C%20London%2C%20UK%20SW1A%201AA!5e0!3m2!1sen!2s!4v1723824435536!5m2!1sen!2s"
           loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
+          referrerpolicy="no-referrer-when-downgrade"
           className="w-full h-full border-0"
-        />
+        ></iframe>
       </div>
     </div>
   );

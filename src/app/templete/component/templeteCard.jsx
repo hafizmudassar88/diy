@@ -11,11 +11,11 @@ const TemplateCard = () => {
   };
 
   return (
-    <div className="flex justify-center items-center  bg-gray-100">
+    <div className="flex justify-center items-center  bg-gray-100 rounded-xl ring-2 ring-[#1B94A6] shadow-2xl">
       <div className="relative w-64 h-80 overflow-hidden rounded-lg shadow-lg group">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center transition-opacity duration-300 group-hover:opacity-60"
+          className="absolute inset-0 bg-center transition-opacity duration-300 group-hover:opacity-60 bg-contain bg-no-repeat"
           style={{ backgroundImage: `url(${templete1.src})` }}
         />
 

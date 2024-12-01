@@ -40,7 +40,7 @@ const CustomForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-7xl mx-auto rounded-lg p-10">
+    <div className="flex flex-col justify-center items-center max-w-7xl mx-auto rounded-lg p-0 md:p-10">
       <form
         className="p-6 rounded-lg shadow-lg w-full bg-primaryBlack text-white"
         onSubmit={handleSubmit}
@@ -61,7 +61,7 @@ const CustomForm = () => {
             name="heading"
             value={presistData?.heading || formData.heading}
             onChange={handleChange}
-            className="w-full border border-primaryBlue bg-primaryBlack text-white rounded-lg p-2 focus:ring-primaryBlue focus:outline-none"
+            className="w-full border border-primaryBlue bg-primaryBlack bg-white text-black rounded-lg p-2 focus:ring-primaryBlue focus:outline-none"
             placeholder="Enter your name"
           />
         </div>
@@ -74,7 +74,7 @@ const CustomForm = () => {
             name="description"
             value={presistData?.description || formData.description}
             onChange={handleChange}
-            className="w-full border border-primaryBlue bg-primaryBlack text-white rounded-lg p-2 focus:ring-primaryBlue focus:outline-none"
+            className="w-full border border-primaryBlue bg-primaryBlack bg-white text-black rounded-lg p-2 focus:ring-primaryBlue focus:outline-none"
             placeholder="Write a description"
           />
         </div>

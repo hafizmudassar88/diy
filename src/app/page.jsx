@@ -1,13 +1,20 @@
 "use client";
-import { useRouter } from "next/navigation";
-import React from "react";
+import HomePage from "./(pages)/home/page";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS
 import { useEffect } from "react";
 
-const Page = () => {
-  const router = useRouter();
+export default function Home() {
   useEffect(() => {
-    router.replace("/main");
-  });
-};
+    AOS.init({
+      duration: 400, // Customize the animation duration
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
 
-export default Page;
+  return (
+    <main>
+      <HomePage />
+    </main>
+  );
+}

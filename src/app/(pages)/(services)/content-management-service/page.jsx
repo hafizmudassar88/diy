@@ -1,16 +1,8 @@
-import { HeroSection } from "../../../../components/shared";
-import ServiceProcedureCard from "../../../../components/shared/ServiceProcedureCard";
 import React from "react";
 
 function ContentManagementService() {
   return (
-    <div>
-      {/* hero section  */}
-      <HeroSection
-        bgImage={"/images/10bea6_143823941f044c608861fb59b181b31d_mv2.jpg"}
-        title={"CMS for Dynamic Content Management"}
-        subtitle={"CMS for Dynamic Content Management"}
-      />
+    <div className="bg-white mt-10 px-4 md:px-20">
 
       {/* Customizable Templates  */}
       <div className="min-h-[70vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] bg-white">
@@ -24,7 +16,7 @@ function ContentManagementService() {
         </div>
 
         {/* right side  */}
-        <div className="bg-white text-black p-10">
+        <div className="bg-white text-black p-10 mt-10">
           <span className="inline-block mt-5 text-2xl uppercase border-b-4 border-[#1B94A6]">
             CMS for Dynamic Content Management
           </span>

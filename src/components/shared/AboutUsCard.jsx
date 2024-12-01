@@ -5,7 +5,7 @@ function AboutUsCard({ title = "", description = "" }) {
   return (
     <div
       data-aos="fade-right"
-      className="grid grid-cols-[auto_1fr] bg-black/85 p-3 rounded-2xl font_barlow shadow-xl"
+      className="grid grid-cols-[auto_1fr] bg-[#1B94A6] p-3 rounded-2xl font_barlow shadow-xl text-white"
 
     >
       <div className="">

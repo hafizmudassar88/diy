@@ -27,15 +27,7 @@ const cardsDetail = [
 
 function AboutUs({ showHeroSection = true }) {
   return (
-    <div>
-      {/* Hero Section */}
-      {showHeroSection && (
-        <HeroSection
-          bgImage="/images/Ceramic_Coating_Application_SEO.jpg"
-          title="About Us"
-          subtitle="About Us"
-        />
-      )}
+    <div className="bg-white">
 
       {/* About Us Section */}
       <div className="min-h-[70vh] grid grid-cols-1 md:grid-cols-2 bg-white">

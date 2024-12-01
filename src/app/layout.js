@@ -54,7 +54,10 @@ export default function RootLayout({ children }) {
         <Toaster position="top-center" reverseOrder={false} />
         {/* <Navbar /> */}
         <StoreProvider>
-          <main className="w-full h-full">{children}</main>
+          <Navbar />
+
+          <main className="w-full h-full mt-32 md:mt-14">{children}</main>
+          <Footer />
         </StoreProvider>
         {/* <Footer /> */}
       </body>

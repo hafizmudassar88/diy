@@ -1,17 +1,8 @@
-import { HeroSection } from "@/components/shared";
 import React from "react";
 
 function HostingPublishing() {
   return (
-    <div>
-      {/* hero section  */}
-      <HeroSection
-        bgImage={"/images/Locate-a-Car-Detailing-Near-You.jpg"}
-        title={
-          "Free Hosting and Publishing Service"
-        }
-        subtitle={"Free Hosting and Publishing"}
-      />
+    <div className="bg-white mt-10 px-4 md:px-20">
 
       {/* Customizable Templates  */}
       <div className="min-h-[70vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] bg-white">
@@ -25,7 +16,7 @@ function HostingPublishing() {
         </div>
 
         {/* right side  */}
-        <div className="bg-white text-black p-10">
+        <div className="bg-white text-black p-10 mt-10">
           <span className="inline-block mt-5 text-2xl uppercase border-b-4 border-[#1B94A6]">
             Free Hosting and Publishing
           </span>

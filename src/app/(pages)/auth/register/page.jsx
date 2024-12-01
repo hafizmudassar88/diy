@@ -151,7 +151,7 @@ export default function Login() {
           <p className="text-sm text-gray-600">
             {"Already have an account?"}{" "}
             <Link
-              href={`/main/auth/login`}
+              href={`/auth/login`}
               className="font-normal text-primary-color hover:underline"
             >
               Login

@@ -1,6 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+// Dynamically import Lottie with ssr: false
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const MediaPlayer = ({ src, loop = true, autoplay = true, className = "" }) => {
   const [animationData, setAnimationData] = useState(null);
