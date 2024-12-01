@@ -3,8 +3,12 @@ import React from "react";
 import AboutUs from "../about-us/page";
 import Services from "../(services)/services/page";
 import { TestimonialCarousel } from "./TestimonialCarousel";
-import TypeWriter from "../../../components/shared/TypeWriter";
-import MediaPlayer from "../../../components/shared/MediaPlayer";
+import TypeWriter from "@/components/shared/TypeWriter";
+import dynamic from "next/dynamic";
+const MediaPlayer = dynamic(() => import("@/components/shared/MediaPlayer"), {
+  ssr: false,
+});
+
 const typewriterStrings = [
   "From Research to Recognition – Build Your Student Portfolio with Ease!",
   "Blog, Publish, Impress – Create Your Website in Minutes!",
@@ -18,10 +22,15 @@ const typewriterStrings = [
 
 function Home() {
   return (
-    <div className="bg-white bg-center bg-no-repeat bg-cover overflow-x-hidden">
+    <div
+      className="bg-center bg-no-repeat bg-cover overflow-x-hidden"
+      style={{
+        backgroundImage: `url(/images/Ceramic_Coating_Application_SEO.jpg)`,
+      }}
+    >
       {/* hero section  */}
-      <div className="relative min-h-[80vh] bg-center bg-no-repeat bg-cover bg-white ">
-        <div className="absolute inset-0 bg-white bg-center bg-no-repeat bg-cover opacity-[0.26] transition-all duration-300"></div>
+      <div className="relative min-h-screen bg-center bg-no-repeat bg-cover bg-white ">
+        <div className="absolute inset-0 bg-[url('/images/customizable-template-scaled-1.png')] bg-center bg-no-repeat bg-cover opacity-[0.26] transition-all duration-300"></div>
         <div className="relative z-10 text-center md:text-start">
           <div className="w-full h-full flex flex-col md:flex-row pt-32 px-5 ">
             <div className="md:grow-3 order-2 md:order-1 md:ps-10 p-2">
@@ -63,7 +72,7 @@ function Home() {
             </div>
 
             <div
-              className="md:grow-1 w-full h-full order-1 md:order-2 items-center bg-white rounded-full"
+              className="md:grow-1 w-full h-full order-1 md:order-2 items-center bg-white rounded-full mt-10 md:mt-20"
               data-aos="fade-right"
             >
               <MediaPlayer
@@ -75,7 +84,7 @@ function Home() {
       </div>
 
       <AboutUs showHeroSection={false} />
-      <Services />
+      <Services showHeroSection={false} limit={3} />
 
       <div className="bg-white pb-10">
         <div className="bg-white flex flex-col justify-center items-center text-black p-10">

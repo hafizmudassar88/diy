@@ -1,8 +1,16 @@
+import { HeroSection } from "@/components/shared";
+import ServiceProcedureCard from "@/components/shared/ServiceProcedureCard";
 import React from "react";
 
 function CustomizeTemplate() {
   return (
-    <div className="bg-white mt-10 px-4 md:px-20">
+    <div>
+      {/* hero section  */}
+      <HeroSection
+        bgImage={"/images/10bea6_e313de2941484aed864686c7ede825ee_mv2.png"}
+        title={"Customizable Templates "}
+        subtitle={"Customizable Templates"}
+      />
 
       {/* Customizable Templates  */}
       <div className="min-h-[70vh] grid grid-cols-1 md:grid-cols-[1fr_1fr] bg-[white]">
@@ -16,7 +24,7 @@ function CustomizeTemplate() {
         </div>
 
         {/* right side  */}
-        <div className="bg-white text-black p-10 mt-10">
+        <div className="bg-white text-black p-10">
           <span className="inline-block mt-5 text-2xl uppercase border-b-4 border-[#1B94A6]">
             Customizable Templates
           </span>

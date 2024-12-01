@@ -12,14 +12,14 @@ import FaCarSide from "../../../public/images/diy.svg";
 function Footer() {
   return (
     <>
-      <footer className="footer bg-white text-base-content p-10 md:grid md:grid-cols-4 font_barlow pt-20">
+      <footer className="footer bg-white text-base-content p-10 md:grid md:grid-cols-4 font_barlow">
         <aside data-aos="fade-up">
           <div className="flex-shrink-0">
             <Link href="/">
               <img
                 src="/images/diy.svg" // Update with your logo path
                 alt="Company Logo"
-                className="h-24 w-24" // Set height and width
+                className="h-50 w-60" // Set height and width
               />
             </Link>
           </div>
@@ -160,9 +160,10 @@ function Footer() {
       </div>
 
       <footer
-        className="footer bg-[white] flex flex-col p-5"
+        data-aos="fade-right"
+        className="footer bg-[white] text-base-content flex flex-col p-5"
       >
-        <p className="text-center text-[#1B94A6]">
+        <p className="text-start text-[#1B94A6]">
           Copyright © 2023, DIY Builders. All Rights Reserved.
         </p>
       </footer>

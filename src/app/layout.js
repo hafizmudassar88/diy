@@ -1,8 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import StoreProvider from "../redux/store/StoreProvider";
-import Navbar from "../components/core/Navbar";
-import Footer from "../components/core/Footer"; // Fixed Footer import path
+
+import Navbar from "@/components/core/Navbar";
+import Footer from "@/components/core/Footer";
 
 import { Toaster } from "react-hot-toast";
 
@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "DIY",
-  description: "Best Car Detailing Service in Town",
+  description: "Best Car detailing Service in Town Town",
 };
 
 export default function RootLayout({ children }) {
@@ -38,28 +38,23 @@ export default function RootLayout({ children }) {
         <link
           rel="mask-icon"
           href="/favicon/safari-pinned-tab.svg"
-          color="#5BBAD5"
+          color="#5bbad5"
         />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#DA532C" />
+        <meta name="msapplication-TileColor" content="#da532c" />
         <meta
           name="msapplication-config"
           content="/favicon/browserconfig.xml"
         />
-        <meta name="theme-color" content="#FFFFFF" />
+        <meta name="theme-color" content="#ffffff" />
       </head>
       <body
-        className={`${inter.className} h-screen grid grid-rows-[auto_1fr_auto]`} // Fixed template string
+        className={`${inter.className} h-screen grid grid-rows-[auto_1fr_auto]`}
       >
+        <Navbar />
         <Toaster position="top-center" reverseOrder={false} />
-        {/* <Navbar /> */}
-        <StoreProvider>
-          <Navbar />
-
-          <main className="w-full h-full mt-32 md:mt-14">{children}</main>
-          <Footer />
-        </StoreProvider>
-        {/* <Footer /> */}
+        <div className="w-full h-full">{children}</div>
+        <Footer />
       </body>
     </html>
   );

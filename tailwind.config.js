@@ -5,7 +5,7 @@ module.exports = {
     "./pages/**/*.{js,jsx}",
     "./components/**/*.{js,jsx}",
     "./app/**/*.{js,jsx}",
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -18,11 +18,6 @@ module.exports = {
     },
     extend: {
       colors: {
-        primaryBlue: "#1B94A6",
-        goldenLight: "#1B94A6",
-        secondaryDark: "#173039",
-        primaryLight: "#FDF7EC",
-        goldenDark: "#1B94A6",
         colors: {
           "custom-blue": "#1B94A6",
         },
@@ -81,11 +76,7 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require("daisyui"),
-    require("tailwind-scrollbar"),
-  ],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
   daisyui: {
     themes: ["dark"],
   },

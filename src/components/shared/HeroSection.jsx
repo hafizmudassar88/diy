@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 function HeroSection({ bgImage, title, subtitle, height = "60vh" }) {
   return (
     <div
-      className="relative bg-[#1b93a670] bg-center bg-no-repeat bg-cover mt-32 md:mt-16"
+      className="relative bg-black bg-center bg-no-repeat bg-cover"
       style={{ minHeight: height }}
     >
       <div
@@ -25,7 +25,7 @@ function HeroSection({ bgImage, title, subtitle, height = "60vh" }) {
         >
           <div className="flex gap-2 items-center">
             Home
-            <FaLongArrowAltRight className="text-lg text-[#1B94A6]" />
+            <FaLongArrowAltRight className="text-lg text-red-600" />
             {subtitle}
           </div>
         </div>
